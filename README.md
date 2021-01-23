@@ -1,2 +1,6 @@
-# Asses_SEM1
- Year 1 Web Tech project using HTML and CSS
+# Chollerton Tearooms Simple Website
+Simple Website developed using HTML and CSS for an imaginery business./
+/
+-simple and modern design
+-responsive design
+-code validated using the W3C Markup Validation Service
