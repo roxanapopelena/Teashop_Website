@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find out more</title>
+    <!--linking to scripts and stylesheet-->
+    <link rel="stylesheet" type="text/css" href="Findoutmore.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<!--large banner section at the top of the page-->
+<div class="hero-section">
+    <!--main navigation for full size screens-->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Findoutmore.html">Find out more</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="Credits.html">Credits</a></li>
+            <li><a href="#">Wireframe</a></li>
+        </ul>
+        <!--creates a toggle button needed for the resized version of the menu-->
+        <div id="toggle">
+            <div class="span" id="one"></div>
+            <div class="span" id="two"></div>
+            <div class="span" id="three"></div>
+        </div>
+    </nav>
+    <!--small screen navigation, displayed when icon is clicked(small screens only)-->
+    <div id="resize">
+        <ul id="menu2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Findoutmore.html">Find out more</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="Credits.html">Credits</a></li>
+            <li><a href="#">Wireframe</a></li>
+        </ul>
+    </div>
+    <!-- content contained by the form section-->
+    <div class="formInfo">
+        <br>
+<h1>
+    Find out more
+</h1>
+        <br><br>
+        <p>Thank you for showing interest in out offers!</p><br>
+        <p>Please enter your details below so we can reach back to you with more information regarding your interest.</p>
+        <br><br>
+        <form action="findoutmore.php" method="post">
+    *Forename:<br>
+    <input type="text" name="Forename"  placeholder="enter forename" required>
+    <br>
+    *Surname:<br>
+    <input type="text" name="Surname" placeholder="enter surname" required>
+    <br>
+    *Email address:<br>
+    <input type="email" name="EmailAddress" placeholder=" enter email address" required>
+    <br>
+    *Landline telephone number<br>
+    <input type="tel" name="LandlineNumber" placeholder="enter landline number" required>
+    <br>
+    *Mobile telephone:<br>
+    <input type="tel" name="MobileNumber" placeholder="enter mobile number" required>
+    <br>
+    *Postal address:<br>
+    <input type="text" name="PostalAddress" placeholder="enter postal address" required>
+    <br><br>
+    Select the category that you are interested in:<br>
+    <input type="radio" name="Category" value="c1" checked required>Tearooms<br>
+    <input type="radio" name="Category" value="c2">Craft Shop<br>
+    <input type="radio" name="Category" value="c3">Village Store<br>
+    <input type="radio" name="Category" value="c4">Post Office<br>
+    <input type="radio" name="Category" value="c5">Bed and Breakfast<br>
+    <br>
+    Choose how you want us to get in touch with you:<br>
+    <input type="radio" name="GetInTouch" value="post" checked required>Post<br>
+    <input type="radio" name="GetInTouch" value="SMS">SMS<br>
+    <input type="radio" name="GetInTouch" value="email">Email<br>
+    <br><br>
+            <p>* required fields</p>
+            <br>
+    <input type="submit" value="Submit" class="submit">
+</form>
+    </div>
+</div>
+<script>
+
+    $("#toggle").click(function() {
+
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+
+    });
+
+</script>
+</body>
+</html>

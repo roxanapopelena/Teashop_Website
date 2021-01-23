@@ -1,0 +1,91 @@
+/* --------- TABLE OF CONTENTS ------------- *\
+- OVERALL SITE
+- BOX PROPERTIES
+- SMALL SCREENS
+- CUSTOM FONTS
+
+\* ----------------------------------------- */
+
+
+/*----------------------------------*\
+		    OVERALL SITE
+\*----------------------------------*/
+* { /*removes default margin, padding and the underline effect*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Times New Roman";
+}
+
+
+/*----------------------------------*\
+		    BOX PROPERTIES
+\*----------------------------------*/
+.box{
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 60px;
+    border-style: solid;
+    border-color: black;
+    align-self: center;
+    padding: 10px 25px;
+    box-sizing: content-box;
+}
+
+h1{
+    font-family: "BirdsFont";
+    font-size: 50px;
+}
+.button {
+    text-decoration: none;
+    margin-top: 20px;
+    color: black;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 10px 25px;
+    transition: 0.5s;
+    font-family: SignatraFont;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    align-self: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+/*----------------------------------*\
+	  	   SMALL SCREENS
+\*----------------------------------*/
+
+@media(max-width: 868px) {
+    .box {
+        margin: 0%;
+    }
+}
+@media(max-width: 1600px) {
+    .box {
+        margin-left: 15%;
+        margin-right:15%;
+    }
+}
+
+/*----------------------------------*\
+		    CUSTOM FONTS
+\*----------------------------------*/
+
+@font-face {
+    font-family: BirdsFont;
+    src: url(Birds.ttf);
+}
+@font-face {
+    font-family: SignatraFont;
+    src: url(Signatra.ttf);
+}

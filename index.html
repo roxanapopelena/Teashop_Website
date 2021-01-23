@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Chollerton Tearooms</title>
+    <!--linking to scripts and stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<!--large banner section at the top of the page-->
+<div class="hero-section">
+    <!--main navigation for full size screens-->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Findoutmore.html">Find out more</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="Credits.html">Credits</a></li>
+            <li><a href="#">Wireframe</a></li>
+        </ul>
+        <!--creates a toggle button needed for the resized version of the menu-->
+        <div id="toggle">
+            <div class="span" id="one"></div>
+            <div class="span" id="two"></div>
+            <div class="span" id="three"></div>
+        </div>
+    </nav>
+    <!--small screen navigation, displayed when icon is clicked(small screens only)-->
+    <div id="resize">
+        <ul id="menu2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Findoutmore.html">Find out more</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="Credits.html">Credits</a></li>
+            <li><a href="#">Wireframe</a></li>
+        </ul>
+    </div>
+    <!--banner caption-->
+    <div class="caption">
+        <h1>
+        Chollerton Tearooms
+        </h1>
+        <br><br>
+        <h2>
+        Experience the passion of hospitality
+        </h2>
+    </div>
+</div>
+<!-- main button to the "Find out more" section-->
+<div class="first-button">
+    <a href="#" class="button1">Learn more</a>
+</div>
+<!--first service offered, each service has separate picture, text and a button to the "Find out more" section-->
+<div class="container1">
+    <img id="img1" src="bed.jpg" alt="bed and breakfast facilities">
+    <div class="textbutton">
+        <mark class="head">Bed & Breakfast</mark><br>
+        <p>
+            There is no other place like Chollerton Tearooms. All you need is a quick<br>
+            glance at what our Bed & Breakfast service has to offer. Whether you are<br>
+            looking for a romantic evening, an energizing weekend or a quick escape to<br>
+            the countryside, we will make sure that you are 100% satisfied during your<br>
+            stay. We can assure you that our Bed & Breakfast, combined with a multitude<br>
+            of other services that we provide, will transform your holiday into a fairytale.
+        </p>
+        <a href="#" class="button2">Learn more</a>
+    </div>
+</div>
+<!--second service offered, each service has separate picture, text and a button to the "Find out more" section-->
+<div class="container2">
+    <img id="img2" src="tea-cake.jpg" alt="Tea and cake">
+    <div class="textbutton">
+        <mark class="head">Tearoom</mark><br>
+        <p>
+            Chollerton Tearooms is exactly what a tearoom should be. Our<br>
+            award winning Tearoom offers a range of homemade soups and snacks,<br>
+            as well as home baking and speciality teas and coffees. We also offer<br>
+            daily specials.<br>
+            Click below to see our menu, which is subject to seasonal availability.
+        </p>
+        <a href="#" class="button2">Learn more</a>
+    </div>
+</div>
+<!--third service offered, each service has separate picture, text and a button to the "Find out more" section-->
+<div class="container1">
+    <img id="img3" src="general-store.jpg" alt="General Store">
+    <div class="textbutton">
+        <mark class="head">General Store</mark><br>
+        <p>The general store available here at Chollerton Tearooms was built in 1842,<br>
+            as were many mercantileshops of the time. It was a place for town residents<br>
+            to purchase many of the day to day staples needed for everyday life, as well as<br>
+            a place to congregate and discuss many aspects of living in the mid-19th century.<br>
+            So if you are ever short on groceries or basic items, the general<br>
+            store available here at Chollerton Tearooms has got your back.
+        </p>
+        <a href="#" class="button2">Learn more</a>
+    </div>
+</div>
+<!--forth service offered, each service has separate picture, text and a button to the "Find out more" section-->
+<div class="container2">
+    <img id="img4" src="craft-store.jpg" alt="Craft Store">
+    <div class="textbutton">
+        <mark class="head">Craft Store</mark><br>
+        <p>
+            Inside The Old Craft Store you will find many inspiring samples, 100% cotton<br>
+            fabrics, from traditional to contemporary, books, patterns, and lots of notions.<br>
+            Instructions in a variety of classes is always available for the person who is interested<br>
+            in learning the art of piecing a quilt or for the advanced person who is interested in<br>
+            projects with more difficult techniques.
+        </p>
+        <a href="#" class="button2">Learn more</a>
+    </div>
+</div>
+<!--fifth service offered, each service has separate picture, text and a button to the "Find out more" section-->
+<div class="container1">
+    <img id="img5" src="post-office.jpg" alt="Post Office">
+    <div class="textbutton">
+        <mark class="head">Post Office</mark>
+        <p>
+            Out post office available here at Challerton Tearooms is just fantastic. We know everything<br>
+            that we need to do, so you do not have to worry about anything. We will make sure your post is<br>
+            safe and delivered on time!<br>
+            Open every day including Saturdays and half day Sundays too!
+        </p>
+        <a href="#" class="button2">Learn more</a>
+    </div>
+</div>
+<!--basic footer-->
+<footer>
+    <p>© Chollerton Tearooms</p>
+    <p>Designed by: Roxana-Elena Pop</p>
+</footer>
+<script>
+
+    $("#toggle").click(function() {
+
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+
+    });
+
+</script>
+</body>
+</html>

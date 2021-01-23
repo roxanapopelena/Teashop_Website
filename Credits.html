@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits Page</title>
+    <!--linking to scripts and stylesheet-->
+    <link rel="stylesheet" type="text/css" href="Credits.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+<!--large banner section at the top of the page-->
+<div class="hero-section">
+    <!--main navigation for full size screens-->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Findoutmore.html">Find out more</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="Credits.html">Credits</a></li>
+            <li><a href="#">Wireframe</a></li>
+        </ul>
+        <!--creates a toggle button needed for the resized version of the menu-->
+        <div id="toggle">
+            <div class="span" id="one"></div>
+            <div class="span" id="two"></div>
+            <div class="span" id="three"></div>
+        </div>
+    </nav>
+    <!--small screen navigation, displayed when icon is clicked(small screens only)-->
+    <div id="resize">
+        <ul id="menu2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Findoutmore.html">Find out more</a></li>
+            <li><a href="admin.php">Admin</a></li>
+            <li><a href="Credits.html">Credits</a></li>
+            <li><a href="#">Wireframe</a></li>
+        </ul>
+    </div>
+    <!--banner caption-->
+    <div class="caption">
+        <h1>Credits</h1><br>
+    </div>
+</div>
+    <div class="aboutMe">
+        <br>
+        <h2>Author</h2>
+        <img id="img1" src="aboutMe.png" alt="mePhoto">
+        <br><br>
+        <p>Roxana Elena Pop</p><br>
+        <p>Student ID: w18004367</p><br>
+        <p>Email Address: roxana.pop@northumbria.ac.uk</p>
+    </div>
+<!--reference section-->
+<div class="Reference">
+    <h3>References</h3>
+    <br>
+    <p>SMS icon:</p>
+    <p>icons8.com,(2018).Icons8[online] Available at:https://icons8.com/icons/set/sms [Accessed 06 May 2019].</p>
+    <p>Post icon:</p>
+    <p>icons8.com,(2018).Icons8[online] Available at:https://icons8.com/icons/set/sms [Accessed 06 May 2019].</p>
+    <p>Email icon:</p>
+    <p>icons8.com,(2018).Icons8[online] Available at:https://icons8.com/icons/set/sms [Accessed 06 May 2019].</p>
+    <p>Signatra custom fonts:</p>
+    <p>dafont.com,(2019).dafont[online] Available at:https://www.dafont.com/signatra.font [Accessed 07 May 2019].</p>
+    <p>Birds of Paradise custom font:</p>
+    <p>dafont.com,(2019).dafont[online] Available at:https://www.dafont.com/birds-of-paradise.font [Accessed 07 May 2019].</p>
+    <p>Security considerations:</p>
+    <p>sitelock.com, (2019). sitelock[online] Available at:https://www.sitelock.com/blog/2018/10/what-is-website-security/ [Accessed 07 May 2019].</p>
+    <p>cwatch.comodo.com, (2019). cwatch[online] Available at: https://cwatch.comodo.com/blog/website-security/tips-to-protect-your-website-from-hackers/ [Accessed 07 May 2019]</p>
+</div>
+<!--Security considerations section-->
+<div class="security">
+    <h4>Security considerations</h4>
+    <br><br>
+    <p id="p2security">In order to garantee more security for the Chollerton Tearoos website, a couple elements should be taken into consideration. You must always keep the operating system software, other application software (such as a content management system), the antimalware solution and the website security solution updated with the latest patches and definitions. Queries must also always be parameterized and standard Transact SQL avoided as this would allow hackers to insert rogue code into the database system.</p>
+    <br>
+    <p id="p3security">You must employ a robust firewall and restrict outside access only to the ports - 80 and 443. Always use Https for your entire website. This would ensure that users do not communicate with fraudulent servers. Lastly, Website Security Tools are absolutely necessary, as it is manually impossible to monitor and manage website security.</p>
+</div>
+<br><br>
+<script>
+
+    $("#toggle").click(function() {
+
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+
+    });
+
+</script>
+</body>
+</html>

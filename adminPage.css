@@ -1,0 +1,110 @@
+/* --------- TABLE OF CONTENTS ------------- *\
+- OVERALL SITE
+- TABLE
+- SMALL SCREENS
+- BACK BUTTON
+- CUSTOM FONTS
+
+\* ----------------------------------------- */
+
+
+
+/*----------------------------------*\
+		    OVERALL SITE
+\*----------------------------------*/
+* { /*removes default margin, padding and the underline effect*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+h1 {
+    font-family: "BirdsFont";
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+/*----------------------------------*\
+		    TABLE
+\*----------------------------------*/
+.table {
+
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top:30px;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+}
+table{
+    padding: 2%;
+    border-collapse: collapse;
+    color:darkred;
+    font-family: BirdsFont;
+    text-align: center;
+}
+
+th{
+    background-color: darkred;
+    color: white;
+}
+
+th:nth-child(even){
+    background-color: #933107;
+}
+
+/*----------------------------------*\
+		    BACK BUTTON
+\*----------------------------------*/
+.button {
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 10px 25px;
+    transition: 0.5s;
+    font-family: SignatraFont;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    align-self: center;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+/*----------------------------------*\
+	  	   SMALL SCREENS
+\*----------------------------------*/
+
+@media(max-width: 1600px) {
+    .table {
+        margin:10%;
+    }
+}
+@media(max-width: 868px) {
+    .table {
+        margin: 2%;
+    }
+}
+/*----------------------------------*\
+		    CUSTOM FONTS
+\*----------------------------------*/
+
+@font-face {
+    font-family: BirdsFont;
+    src: url(Birds.ttf);
+}
+@font-face {
+    font-family: SignatraFont;
+    src: url(Signatra.ttf);
+}
